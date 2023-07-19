@@ -1,0 +1,187 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container{
+  width:100vw;
+  height:100vh;
+  display:grid;
+  grid-template-rows: 15% 85%;
+  position: relative;
+  background-color: white;
+}
+header{
+  display: flex;
+  height:15vh;
+  margin: 0px 0px;
+  background-color: white;
+}
+.logo{
+  display: flex;
+  background-color: black;
+  color: white;
+  width: 11%;
+    margin: 30px 44px;
+    height: 43%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.logo p{
+  text-align: center;
+  margin: 11px 13px;
+}
+.title{
+  display: block;
+    margin: 35px auto;
+    width: 14%;
+
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+.buttons button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 17px 20px;
+  border-radius: 17px;
+  margin:3px 3px;
+  cursor: pointer;
+}
+.buttons .btn1{
+  margin:0px -14px;
+}
+.buttons .btn2{
+  margin:0px 54px;
+  background-color: black;
+  color:white;
+}
+#main{
+  display: grid;
+  grid-template-columns: 1fr 2fr 7fr;
+}
+#main .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  box-shadow: 1px 3px 2px grey;
+  width:100%;
+  height:100%;
+}
+#main .box img{
+  width:21%;
+  margin-top: 26px;  
+}
+#main .box #last{
+  margin-top: 298px;
+}
+#main .group2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#main .group2 .icons{
+  display: flex;
+   justify-content: flex-start;  
+  align-items: center;
+  margin: 28px 13px;
+}
+#main .group2 .icons img{
+  width:35%;
+  margin:3px 10px ;
+}
+#main .group2 .head{
+  margin: -10px 20px;
+}
+#main .group2 .icons .head h1{
+  text-align: center;
+  font-size: 1.3rem;
+}
+#main .group2 .context{
+  display: flex;
+  flex-direction: column;
+  margin: 33px 23px;
+}
+#main .group2 .context pre{
+  margin: 9px 3px;
+  font-size: 1rem;
+}
+#main .group2 .heading{
+margin: 41px 30px;
+}
+#main .group2 .heading h1{
+ font-size: 2rem;
+ font-weight: bold;
+}
+#main .group2 .subhead{
+margin: -14px 24px;
+}
+#main .group2 .content{
+  margin: 45px 24px;
+
+}
+@media  screen and (max-width:855px) {
+   header{
+    height:20vh;
+   }
+   .logo{
+    width:16%;
+    margin:13px 1px;
+   }
+   .title{
+    margin: 15px auto;
+   }
+   .buttons{
+    margin-top: -21px;
+   }
+   .buttons .btn1{
+    margin: 0px -34px;
+  }
+  .buttons .btn2{
+    margin:0px 72px;
+  }
+  #main .group2 .content p{
+    font-size: 0.7rem;
+    
+    }
+
+}
+@media screen and (max-width:541px){
+  .container{
+    grid-template-rows: 17% 85%;
+    /* background-color: red;  */
+  }
+  header{
+    height:17vh;
+  }
+  .logo{
+    width: 24%;
+    margin: 15px 1px;
+  }
+  .logo p{
+  margin: 6px 10px;
+  }
+  .title{
+    margin: 18px 38px;
+  
+  }
+  .title p{
+    font-size: 0.7rem;
+  }
+  .buttons{
+    margin: 12px 27px;
+  }
+  .buttons button{
+    padding: 10px 10px;
+  }
+  #main .group2 .content p{
+  font-size: 0.7rem;
+  
+  }
+}
